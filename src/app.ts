@@ -5,6 +5,7 @@ import { db } from "./database/database";
 
 class App {
   app: express.Application = express();
+
   start() {
     //Inicializa as variáveis
     dotenv.config();
@@ -26,7 +27,6 @@ class App {
   async setupDatabase() {
     await db.open();
     await db.migrate();
-    await db.close();
   }
 }
 
