@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 import bookRouter from "./routes/bookRouter";
 import { db } from "./database/database";
 
@@ -10,6 +11,7 @@ class App {
     //Inicializa as variáveis
     dotenv.config();
     this.app.use(express.json());
+    this.app.use(cors());
 
     this.setupRoutes();
     this.setupDatabase();
