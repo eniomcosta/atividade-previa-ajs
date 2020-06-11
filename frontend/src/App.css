@@ -1,0 +1,22 @@
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+}
